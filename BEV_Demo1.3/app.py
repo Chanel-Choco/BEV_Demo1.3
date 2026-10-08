@@ -109,7 +109,7 @@ with st.sidebar:
                                 help="Partition explainer with a blur masker, as in Notebook 2. Takes seconds "
                                      "to a minute or more depending on the machine.")
     st.caption(f"Running on: **{DEVICE}**")
-    with st.expander("Advanced"):
+    with st.expander("More"):
         threshold = st.slider("Decision threshold (P(AI) at or above this means 'AI generated')",
                               0.30, 0.90, 0.50, 0.01,
                               help="Every metric reported in the thesis uses 0.5. Other values are for "
